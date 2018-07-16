@@ -1,19 +1,32 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const prefix = '@'
 
-client.on('ready', () => {
-  console.log(`Logged in as ${client.user.tag}!`);
-});
+console.log("Welcome Again !");
+ 
+ client.on("guildMemberRemove", member => {
+  member.createDM().then(function (channel) {
+  return channel.send(` 
+**
+Hello 
+Pls Join And Don't Leave
+If you want money from inviting ppls join this discord
+                               [ https://discord.gg/j9hQ8XR ] 
+Invite Privte For You ... [ ${member}  ]
+**`) 
+}).catch(console.error)
 
-client.on('message', msg => {
-  if (msg.content === 'ping') {
-    msg.reply('Pong!');
-  }
-});
-
-
-
-
-
+})
+ 
+client.on("guildMemberAdd", member => {
+  member.createDM().then(function (channel) {
+  return channel.send(` 
+**
+Hello 
+Pls Join And Don't Leave
+If you want money from inviting ppls join this discord
+                               [https://discord.gg/j9hQ8XR ] 
+Invite Privte For You ... [ ${member}  ]
+**`)  
+}).catch(console.error)
+})
 client.login(process.env.BOT_TOKEN);
