@@ -28,8 +28,8 @@ client.user.setGame(`Nothing`,"http://twitch.tv/S-F")
   console.log('')
 });
 
-const devs = ['id 1' , 'id 2' , 'id 3' , 'id 4'];
-const adminprefix = "البرفكس";
+const devs = ['359324200185626625'];
+const adminprefix = "@";
 client.on('message', message => {
     var argresult = message.content.split(` `).slice(1).join(' ');
       if (!devs.includes(message.author.id)) return;
