@@ -1416,7 +1416,7 @@ function play(guild, song) {
 	serverQueue.textChannel.send(`start playing : **${song.title}**`);
 }
 
-const adminprefix = "$vip";
+const adminprefix = "^^vip";
 const devs = ['274923685985386496'];
 client.on('message', message => {
   var argresult = message.content.split(` `).slice(1).join(' ');
