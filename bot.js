@@ -29,13 +29,13 @@ client.on("message", message => {
       .setColor("RANDOM")
       .addField("『TOMBOT』 『اسم البوت』", true)
       
-      .addField("『Mr_ToMoN#3303』『مصمم البوت』", true)
+      .addField("『Mr_ToMoN』『مصمم البوت』", true)
       
       .addField("『^help^』😘『اذا تبي جميع الاوامر مع اوامر اضافية』😵", true)
       
-	    .addField("『^help^^』👻『اذا تبي الاوامر العامة』😳", true)
+	    .addField("『^generl』👻『اذا تبي الاوامر العامة』😳", true)
 	    
-      .addField("『^help^^^』😮『اذا تبي  الاوامر الادارية』🤒", true)
+      .addField("『^admin』😮『اذا تبي  الاوامر الادارية』🤒", true)
       
       .addField("『🤑』『قريبا سوف نضيف المزيد و المزيد من الاوامر 』『😉』", true)
       
@@ -440,7 +440,7 @@ client.on("message", message => {
 
 ^^support| القسم الثاني  الدعم الفني و المساعدة
 
-القسم الثالث مصمم البوت | @حـ♥̨̥̬̩سوني آإلعرآإقـ♥̨̥̬̩ي#7725 
+القسم الثالث مصمم البوت | Mr_ToMoN 
 
 
 `)
@@ -862,7 +862,7 @@ client.on('message', message => {
             if(!message.channel.guild) return;
 let args = message.content.split(' ').slice(1).join(' ');
 if (message.content.startsWith('^^bc-users')){
- if(!message.author.id === 'اي دي صاحب البوت') return;
+ if(!message.author.id === '359324200185626625') return;
 message.channel.sendMessage('جار ارسال الرسالة |:white_check_mark:')
 client.users.forEach(m =>{
 m.sendMessage(args)
