@@ -19,30 +19,7 @@ client.on('ready',  () => {
 });
 
 
-client.on("message", message => {
-             
-     if(!message.channel.guild) return;
 
- if (message.content === "-help") {
-   message.react("😜")
-  const embed = new Discord.RichEmbed()
-      .setColor("RANDOM")
-      .addField("『ToMoN』 『اسم البوت』", true)
-      
-      .addField("『ToMoN』『مصمم البوت』", true)
-      
-      .addField("『^help^』😘『اذا تبي جميع الاوامر مع اوامر اضافية』😵", true)مش متفعل
-      
-	    .addField("『^generl』👻『اذا تبي الاوامر العامة』😳", true) مش متفعل
-	    
-      .addField("『^admin』😮『اذا تبي  الاوامر الادارية』🤒", true)مش متفعل
-      
-      .addField("『🤑』『قريبا سوف نضيف المزيد و المزيد من الاوامر 』『😉』", true)مش متفعل
-      
-  message.channel.sendMessage({embed});
-
- }
-});
 
 client.on('message', message => {
 var prefix = "-";
@@ -87,7 +64,7 @@ m.sendMessage(args)
 client.on('message', message => {
   if (true) {
 if (message.content === '-support') {
-      message.author.send(' |https://discord.gg/j9hQ8XR| لـ أي استفسار').catch(e => console.log(e.stack));
+      message.author.send(' |https://discord.gg/CJBKvvs| لـ أي استفسار').catch(e => console.log(e.stack));
 
     }
    } 
